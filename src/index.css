@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --nav-height: 100px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #f3f3f3;
+  font-family: 'Poppins',sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+.nav-bar {
+  height: var(--nav-height);
+  background: #303030;
+  padding: 0 1rem;
+  border-bottom: #000 1px solid;
+}
+
+.navbar-nav {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-list{
+  --ul-height: calc(var(--nav-height) * 0.8);
+  width: var(--ul-height);
+  height: var(--ul-height);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-button{
+  --button-size: calc(var(--nav-height) * 0.6);
+  width: var(--button-size);
+  height: var(--button-size);
+  padding: 2px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: #3d3d3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: filter 500ms
+}
+
+.icon-button:hover{
+  filter: brightness(1.2);
+}
